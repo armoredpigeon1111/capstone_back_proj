@@ -12,9 +12,9 @@ class Gig(models.Model):
     street = models.CharField(max_length=50)
     city = models.CharField(max_length=20)
     state = models.CharField(max_length=30)
-    zipcode = models.IntegerField(max_length=15)
-    likes = models.IntegerField(max_length=10)
-    rsvps = models.IntegerField(max_length=10)
+    zipcode = models.IntegerField()
+    likes = models.IntegerField()
+    rsvps = models.IntegerField()
 
 class Review(models.Model):
     gig_id = models.IntegerField(null=False)
