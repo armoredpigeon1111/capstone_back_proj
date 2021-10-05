@@ -22,3 +22,11 @@ class Review(models.Model):
 
     def __str__(self):
         return self.body
+    
+class Fan(models.Model):
+    username = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
+    genre1 = models.CharField(max_length=50)
+    genre2 = models.CharField(max_length=50)
+    genre3 = models.CharField(max_length=50)
+    zipcode = models.IntegerField()
